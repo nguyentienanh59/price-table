@@ -7,23 +7,22 @@
 
 .price-row {
   position: absolute;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  margin-top: 216px;
-  margin-left: 391px;
-  margin-bottom: 216px;
-  margin-right: 391px;
+  width: 100vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 362px);
+  justify-content: center;
+  padding: 50px;
+  
+  
 }
 .price-col {
   position: relative;
-  width: 366px;
-  height: 677px;
-  left: 0px;
-  top: 0px;
+  height: 677px; 
+  /* min-height: ;
+   */
   border: 1px solid #000000;
   text-align: center;
-  margin-right: 48px;
 }
 .price-header {
   width: 362px;
@@ -53,7 +52,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-
 }
 .price-header pre {
   position: absolute;
